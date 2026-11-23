@@ -1,0 +1,46 @@
+{
+  "concept_doi": "10.5281/zenodo.22713135",
+  "previous_record": "24180774",
+  "previous_version": "1.3 (Theorem 28 proved)",
+  "metadata": {
+    "title": "Further constraints on simultaneous totient and divisor-sum jumps of length 12: the form n=p^2q",
+    "upload_type": "publication",
+    "publication_type": "article",
+    "publication_date": "2026-11-23",
+    "version": "1.5",
+    "language": "eng",
+    "license": "cc-by-4.0",
+    "creators": [
+      {
+        "name": "Frohman, Benjamin Stanley",
+        "affiliation": "Independent Researcher",
+        "orcid": "0009-0006-7068-3718"
+      }
+    ],
+    "keywords": [
+      "Euler totient",
+      "sum of divisors",
+      "Lean 4",
+      "kernel certificate",
+      "Roy Choudhury-Wei"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/BenFrohman/RCW-Residuals-Lean",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://github.com/BenFrohman/RCW-Version15-Certificates",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://github.com/BenFrohman/p2q-jumps-lean",
+        "relation": "isSupplementTo",
+        "scheme": "url"
+      }
+    ],
+    "description": "<p>Version 1.5 (23 November 2026). This is a new version of concept DOI 10.5281/zenodo.22713135. Version 1.3 remains the 12 November 2026 deposit.</p><p>The vanishing conjecture for n = p^2q is not proved. Hypotheses H2 and H3 remain open. The elliptic packaging of residual R2 is not a closure.</p><p>What was re-checked on 16 November 2026:</p><ul><li>RCW.R2TwistFibers, Lean 4.14.0, Mathlib revision 4bbdccd. lake build printed Built RCW.R2TwistFibers and Build completed successfully. The two theorems exclude integer points on the twist fibers with 5 ≤ r and 1 ≤ |d| ≤ (r − 3)/2. That is not Hypothesis R2.</li><li>P2qTheorem28, Lean 4.22.0, Mathlib revision 79e94a09. Built P2qTheorem28.Theorem28. Build completed successfully.</li><li>P2qStructural, P2qTheoremD, and P2qExtensions, same toolchain. Build completed successfully. One linter warning at P2qStructural/Basic.lean:116.</li><li>Every named declaration printed by #print axioms depends only on propext, Classical.choice, and Quot.sound.</li></ul><p>The file p2q-jumps-v1.5.pdf is 51 pages: the v0.11-review2 paper, then the kernel re-check, then the Lean sources. The logs deposited beside it are the captured tails of those runs, not a full Mathlib trace.</p><p>Rejected drafts are not certificates: the imports Mathlib.Data.Int.Basic and Mathlib.Tactic.Nlinarith do not exist at that Mathlib revision; linarith failed on the undoubled gap; a later edit corrupted the import to Nnnlinarith.</p><p>Lean sources are Apache-2.0. This deposit is CC BY 4.0. Author responsible for every theorem, computation, and error: Benjamin Stanley Frohman. ORCID 0009-0006-7068-3718.</p>"
+  }
+}

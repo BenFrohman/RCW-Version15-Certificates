@@ -1,0 +1,36 @@
+name: Zenodo publish v1.5
+
+# Reads publication/v1.5 and deposits a new version of 10.5281/zenodo.22713135.
+# Dispatch this only after the pull request is merged and kernel-certificate is green.
+# A missing token stops the job. Nothing is deposited in that case.
+
+on:
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: "Publish the new version. Set false to leave a Zenodo draft."
+        required: true
+        default: "true"
+        type: choice
+        options:
+          - "true"
+          - "false"
+
+permissions:
+  contents: read
+
+jobs:
+  zenodo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deposit Version 1.5
+        env:
+          ZENODO_TOKEN: ${{ secrets.ZENODO_TOKEN }}
+          ZENODO_PUBLISH: ${{ inputs.publish }}
+        run: |
+          if [ ! -f publication/v1.5/deposit.py ]; then
+            echo "::error::publication/v1.5 is not on this commit. Merge the handoff pull request first."
+            exit 1
+          fi
+          python3 publication/v1.5/deposit.py

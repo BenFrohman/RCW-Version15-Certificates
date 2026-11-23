@@ -1,0 +1,15 @@
+P2qTheorem28.theorem28 : ∀ (p q r s t : ℕ),
+  Nat.Prime p →
+    Nat.Prime q →
+      p ≠ q →
+        Nat.Prime r →
+          Nat.Prime s →
+            Nat.Prime t →
+              r ≠ s →
+                r ≠ t →
+                  s ≠ t →
+                    (p ^ 2 * q + 12).totient = (p ^ 2 * q).totient + 12 →
+                      (ArithmeticFunction.sigma 1) (p ^ 2 * q + 12) = (ArithmeticFunction.sigma 1) (p ^ 2 * q) + 12 →
+                        p ^ 2 * q + 12 ≠ r * s * t
+'P2qTheorem28.theorem28' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P2qTheorem28.no_symmetric_triple' depends on axioms: [propext, Classical.choice, Quot.sound]

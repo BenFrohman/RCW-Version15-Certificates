@@ -1,0 +1,38 @@
+{
+  "handoff": "publication/v1.5/HANDOFF.md",
+  "scope": "publication/v1.5/SCOPE.md",
+  "zenodo_metadata": "publication/v1.5/ZENODO_METADATA.json",
+  "must_read_before_publish": ["SCOPE.md", "HANDOFF.md", "ZENODO_METADATA.json"],
+  "forbidden_claims": [
+    "Hypothesis R2 is proved",
+    "Hypothesis H2 is closed",
+    "Hypothesis H3 is closed",
+    "the vanishing conjecture for n = p^2q is proved"
+  ],
+  "kernel_logs_are": "tails captured on 16 November 2026, not full Mathlib traces",
+  "upload": [
+    "drafts/p2q-jumps-v1.5.pdf",
+    "drafts/kernel-recheck-front.pdf",
+    "drafts/RCW-R2TwistFibers-kernel-certificate.pdf",
+    "drafts/RCW-R2-TwistFibers-Certificate.pdf",
+    "logs/rcw-lake-build-2026-11-16.log",
+    "logs/theorem28-lake-build-2026-11-16.log",
+    "logs/theorem28-axioms-2026-11-16.log",
+    "logs/extensions-lake-build-2026-11-16.log",
+    "logs/extensions-axioms-2026-11-16.log",
+    "logs/kernel-audit-2026-11-16.log",
+    "SCOPE.md",
+    "HANDOFF.md"
+  ],
+  "do_not_replace_inherited_zenodo_files": [
+    "p2q-jumps-v0.11-review2.tex",
+    "p2q-jumps-v0.11.tex",
+    "p2q-jumps-v0.11-review2.pdf"
+  ],
+  "commits": {
+    "RCW-Residuals-Lean": "e97f2ecc0423aeb97cf11237b1a13439b0ee0e98",
+    "RCW-Version15-Certificates": "5501ddebc5ad3d361bd2fbfdd348e556361ab828",
+    "p2q-jumps-lean": "5b66051c7cb5e376a25f42c856316c0fe533f451",
+    "twist_fiber_file_that_first_built": "422180805b97610d2849a183c37e9089570fbff2"
+  }
+}
