@@ -1,0 +1,25 @@
+'P2qExtensions.corollaryF1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P2qExtensions.pow_four_lt_two_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P2qExtensions.omegaOdd_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P2qExtensions.oddExpCount_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P2qExtensions.totient_moebius' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P2qExtensions.sigma_antidiag' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P2qExtensions.lemmaL1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P2qExtensions.delta_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P2qExtensions.sigma_mul_totient_prime_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P2qExtensions.sigma_mul_totient_prod' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P2qExtensions.delta_Q_p2q' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P2qExtensions.lemmaQ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P2qExtensions.sq_mul_delta_ge' depends on axioms: [propext, Classical.choice, Quot.sound]
+'P2qExtensions.repeated_prime_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+corollaryF1 : ∀ (p q : ℕ),
+  Nat.Prime p →
+    Nat.Prime q →
+      p ≠ q →
+        5 ≤ p →
+          5 ≤ q →
+            (p ^ 2 * q + 12).totient = (p ^ 2 * q).totient + 12 →
+              (ArithmeticFunction.sigma 1) (p ^ 2 * q + 12) = (ArithmeticFunction.sigma 1) (p ^ 2 * q) + 12 →
+                Squarefree (p ^ 2 * q + 12) →
+                  4 ≤ (p ^ 2 * q + 12).primeFactors.card →
+                    p = 7 ∧ 7 ≤ (p ^ 2 * q + 12).primeFactors.card ∧ (p ^ 2 * q + 12).primeFactors.card ≤ 9

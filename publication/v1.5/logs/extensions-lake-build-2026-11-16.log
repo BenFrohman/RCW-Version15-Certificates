@@ -1,0 +1,22 @@
+⚠ [7082/7098] Built P2qStructural.Basic
+warning: P2qStructural/Basic.lean:116:34: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [7083/7098] Built P2qTheoremD.Analytic
+✔ [7085/7103] Built P2qTheoremD.Arithmetic
+✔ [7086/7103] Built P2qTheoremD.Certificate
+✔ [7087/7103] Built P2qStructural.Radical
+✔ [7088/7103] Built P2qStructural.TwoAdic
+✔ [7089/7103] Built P2qTheoremD.SquarefreeArithmetic
+✔ [7090/7103] Built P2qTheoremD.FourAnalytic
+✔ [7091/7103] Built P2qStructural
+✔ [7093/7103] Built P2qTheoremD.FourPrime
+✔ [7094/7103] Built P2qTheoremD.FiniteProduct
+✔ [7095/7103] Built P2qExtensions.DeltaQ
+✔ [7096/7103] Built P2qTheoremD.GeneralAnalytic
+✔ [7097/7103] Built P2qExtensions.RepeatedSize
+✔ [7098/7103] Built P2qTheoremD.Main
+✔ [7099/7103] Built P2qTheoremD
+✔ [7101/7103] Built P2qExtensions.F1
+✔ [7102/7103] Built P2qExtensions
+Build completed successfully.
